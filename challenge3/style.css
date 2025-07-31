@@ -1,48 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-
-* {
-  box-sizing: border-box;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
 }
 
-.container{
-  background-color: #23424A;
-  padding: 100px 0px;
+h1 {
+    font-size: 3rem;
 }
 
-.info-container{
-  color: #fff;
-  max-width: 35%;
-  margin-inline-start: 150px;
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-.info-container h1{
-  font-weight: 900;
-  font-size: 48px;
-  padding: 0;
-  margin: 0;
+.hero {
+    padding: 100px 0;
+    background-color: #23424A;
+    color: #FFF;
 }
 
-.info-container p{
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 30px;
-  margin-block-end: 50px;
-  color: #c5cccce8;
+.hero__text {
+    width: 60%;
 }
 
-.info-container button{
-  background-color: #38CFD9;
-  color: #23424A;
-  font-weight: 700;
-  font-size: 21px;;
-  padding: 1rem 2.5rem;
-  border: none;
-  text-transform: uppercase;
-  border-radius: 25px;
+.hero p {
+    margin-bottom: 3em;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424A;
+    font-weight: 900;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
 }
