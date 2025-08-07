@@ -1,0 +1,111 @@
+/* in the cery first section try setting a min-height 
+of 660px and using what we’ve covered in
+flexbox to center the content vertically */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container{
+    max-width: 1128px;
+    margin-inline: auto;
+}
+
+.hero{
+    background-color: #F3EED9;
+}
+
+.hero--description{
+    min-height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero--description h1{
+    text-align: center;
+    color: #824936;
+    font-size: 60px;
+}
+
+.hero--description p{
+    font-weight: 300;
+    font-size: 21px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.quality-designs{
+    margin-block: 100px;
+}
+
+.quality-designs h1{
+    color: #824936;
+    text-align: center;
+    margin-block: 0px 40px;
+}
+
+.quality-designs-desc{
+    display: flex;
+    gap: 40px;
+}
+
+p{
+    line-height: 25px;
+}
+
+.hero-made-custom, .hero-created-with-care{
+    background-color: #222C2A;
+    color: #fff;
+}
+
+.container.made-custom, .created-with-care{
+    display: flex;
+    padding-block: 60px;
+    gap: 40px;
+}
+
+.made-custom-desc-container h1, .created-with-care h1{
+    color: #F3EED9;
+}
+
+.made-custom-desc-container p, .created-with-care p{
+    margin-block: 20px;
+}
+
+.made-custom-img-container{
+    text-align: end;
+}
+.made-custom-img-container img{
+    width: 95%;
+}
+.made-custom-img-container, .made-custom-desc-container{
+    width: 100%;
+}
+
+.hero-created-with-care{
+    background-color: #824936;
+}
+
+.created-with-care-img-container{
+    width: 100%;
+}
+
+.created-with-care-desc-container{
+    width: 92%;
+}
+
+.created-with-care-img-container img{
+    width: 92%;
+}
