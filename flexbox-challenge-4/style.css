@@ -109,3 +109,17 @@ p{
 .created-with-care-img-container img{
     width: 92%;
 }
+
+@media (max-width: 600px){
+    .quality-designs-desc, .container.made-custom, .created-with-care{
+        flex-direction: column;
+    }
+
+    .container{
+        padding-inline: 30px;
+    }
+
+    .made-custom-img-container img, .created-with-care-img-container img{
+        width: 100%;
+    }
+}
