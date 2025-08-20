@@ -252,3 +252,123 @@ img{
     flex-direction: column;
     gap: 15px;
 }
+
+@media (min-width: 600px){
+
+    .nav-container{
+        display: flex;
+    }
+
+    .nav__list{
+        display: flex;
+        gap: 50px;
+    }
+
+    .nav-toggle{
+        visibility: hidden;
+    }
+
+    .nav{
+        visibility: visible;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: end;
+    }
+
+    .nav__list.nav__list--secondary{
+        margin: 0;
+        margin-inline-start: 60px;
+    }
+
+    .first-section{
+        border: 1px solid pink;
+    }
+    .first-section__description p{
+        font-size: 24px;
+        max-width: 550px;
+        line-height: 35px;
+    }
+    .container h1 {
+        font-size: 120px;
+    }
+    .container{
+        padding-inline: 100px;
+    }
+    .first-section{
+        padding-block: 100px;
+        display: flex;
+    }
+
+    .first-section h1{
+        width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+
+    .first-section__description{
+        display: flex;
+        justify-content: end;
+        text-align: left;
+        width: 100%;
+    }
+
+    .first-section__description button{
+        font-size: 24px;
+        max-width: 250px;
+    }
+
+
+
+
+
+    .second-section{
+        padding-block: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+    }
+
+    .third{
+        display: flex;
+    }
+
+    .first-colum.container h1{
+        font-size: 36px;
+    }
+
+
+    .footer .container{
+        padding-block: 100px;
+        text-align: center;
+    }
+
+    .footer .container h1{
+        font-size: 60px;
+    }
+
+    .about, .rigth-col{
+        width: 100%;
+        display: flex;
+        gap: 150px;
+    }
+
+    .about-company{
+        text-align: left;
+        max-width: 35%;
+    }
+
+    .about-company p{
+        padding-inline-end: 100px;
+    }
+
+    .rigth-col-info{
+        align-items: flex-start;
+    }
+
+    .footer .container a{
+        font-weight: 400;
+    }
+}
